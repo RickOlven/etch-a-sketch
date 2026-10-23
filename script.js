@@ -6,5 +6,9 @@ const container = document.querySelector("#container");
 
         newDiv.style.width = '60px';
         newDiv.style.height = '60px';
+
+        newDiv.addEventListener("mouseover", ()=>{
+            newDiv.style.backgroundColor = 'black';
+        })
         container.appendChild(newDiv);
     }
