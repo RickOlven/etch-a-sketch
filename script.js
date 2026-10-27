@@ -15,7 +15,12 @@ function newGrid(squaresPerSide){
         newDiv.style.height = `${squareSize}px`;
 
         newDiv.addEventListener("mouseover", ()=>{
-            newDiv.style.backgroundColor = 'black';
+            
+            const red = Math.floor(Math.random()* 256);
+            const green= Math.floor(Math.random()* 256);
+            const blue = Math.floor(Math.random()* 256);
+
+            newDiv.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
         })
         container.appendChild(newDiv);
     }
